@@ -1,0 +1,19 @@
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in the repo. Unless a later
+# match takes precedence, users and teams which are put in owners will be requested
+# for review when someone opens a pull request.
+
+# Per "Onboarding Pack Maintainers"
+# (https://github.com/StackStorm-Exchange/exchange-incubator/issues/152#issuecomment-737565528),
+# every pack maintainer or group should be:
+# 1) Listed in the CODEOWNERS
+# 2) Included in README under "Maintainers" section with contact details
+
+# This is base configuration. These owners could review the whole file in this repository.
+# If you're a pack maintainer, include your Github @username here.
+* @StackStorm-Exchange/tsc
+
+# CI configuration files should be reviewed by specific owners who are more responsible
+# for ensuring the quality of this pack or orchestrate StackStorm-Exchanges.
+.github/**  @StackStorm-Exchange/tsc
